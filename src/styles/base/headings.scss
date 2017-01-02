@@ -1,0 +1,44 @@
+/*------------------------------------*\
+	Headings
+\*------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $heading-font;
+    color: $heading-color;
+    text-rendering: optimizelegibility;
+	margin: $spacing 0;
+}
+
+h1, .alpha {
+	@include font-size($h1-size);
+
+	img {
+		width: 60px;
+		margin-right: 10px;
+	}
+
+	a, a:hover {
+		color: $heading-color;
+		text-decoration: none;
+	}
+}
+
+h2, .bravo {
+	@include font-size($h2-size);
+}
+
+h3, .charlie {
+	@include font-size($h3-size);
+}
+
+h4, .delta {
+	@include font-size($h4-size);
+}
+
+h5, .echo {
+	@include font-size($h5-size);
+}

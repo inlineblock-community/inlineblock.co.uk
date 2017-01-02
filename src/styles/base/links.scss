@@ -1,0 +1,14 @@
+/*------------------------------------*\
+	Links
+\*------------------------------------*/
+
+a {
+	color: $link-color;
+	text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+	color: $link-color-hover;
+	text-decoration: underline;
+}

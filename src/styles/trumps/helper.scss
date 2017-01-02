@@ -1,0 +1,141 @@
+/*------------------------------------*\
+	Helper classes
+\*------------------------------------*/
+
+
+
+/**
+ * Type
+ */
+.bold			{ font-weight: bold!important; }
+.semibold		{ font-weight: 600!important; }
+.regular		{ font-weight: normal!important; }
+.light			{ font-weight: 300!important; }
+.italic			{ font-style: italic!important; }
+.caps			{ text-transform: uppercase!important; }
+.left-align		{ text-align: left!important; }
+.center			{ text-align: center!important; }
+.right-align	{ text-align: right!important; }
+
+
+
+/**
+ * Floats
+ */
+.left	{ float: left!important; }
+.right	{ float: right!important; }
+
+
+
+/**
+ * Margin
+ */
+.m0		{ margin: 0!important; }
+.mt0	{ margin-top: 0!important; }
+.mr0	{ margin-right: 0!important; }
+.mb0	{ margin-bottom: 0!important; }
+.ml0	{ margin-left: 0!important; }
+
+.m1		{ margin: $spacing-s!important; }
+.mt1	{ margin-top: $spacing-s!important; }
+.mr1	{ margin-right: $spacing-s!important; }
+.mb1	{ margin-bottom: $spacing-s!important; }
+.ml1	{ margin-left: $spacing-s!important; }
+
+.m2		{ margin: $spacing!important; }
+.mt2	{ margin-top: $spacing!important; }
+.mr2	{ margin-right: $spacing!important; }
+.mb2	{ margin-bottom: $spacing!important; }
+.ml2	{ margin-left: $spacing!important; }
+
+.m3		{ margin: $spacing-l!important; }
+.mt3	{ margin-top: $spacing-l!important; }
+.mr3	{ margin-right: $spacing-l!important; }
+.mb3	{ margin-bottom: $spacing-l!important; }
+.ml3	{ margin-left: $spacing-l!important; }
+
+.mxn1	{ margin-left: $spacing-s!important; margin-right: $spacing-s!important; }
+.mxn2	{ margin-left: $spacing!important; margin-right: $spacing!important; }
+.mxn3	{ margin-left: $spacing-l!important; margin-right: $spacing-l!important; }
+
+
+
+/**
+ * Padding
+ */
+.p0		{ padding: 0!important; }
+.pt0	{ padding-top: 0!important; }
+.pr0	{ padding-right: 0!important; }
+.pb0	{ padding-bottom: 0!important; }
+.pl0	{ padding-left: 0!important; }
+
+.p1		{ padding: $spacing-s!important; }
+.py1	{ padding-top: $spacing-s!important; padding-bottom: $spacing-s!important; }
+.px1	{ padding-left: $spacing-s!important; padding-right: $spacing-s!important; }
+
+.p2		{ padding: $spacing!important; }
+.py2	{ padding-top: $spacing!important; padding-bottom: $spacing!important; }
+.px2	{ padding-left: $spacing!important; padding-right: $spacing!important; }
+
+.p3		{ padding: $spacing-l!important; }
+.py3	{ padding-top: $spacing-l!important; padding-bottom: $spacing-l!important; }
+.px3	{ padding-left: $spacing-l!important; padding-right: $spacing-l!important; }
+
+
+
+/**
+ * Debug
+ */
+@if $debug == true {
+	* {
+		box-shadow: inset 0 0 0 1px red;
+	}
+}
+
+
+
+/**
+ * Resposive helper
+ */
+@if $responsive-helper == true {
+	body::after {
+		content: '$bp1: <#{$bp2}';
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		display: block;
+		background: hotpink;
+		padding: 15px;
+		color: #fff;
+		
+		@include bp(bp2) {
+			content: "$bp2: #{$bp2}";
+			background: magenta;
+		}
+		
+		@include bp(bp3) {
+			content: "$bp3: #{$bp3}";
+			background: red;
+		}
+		
+		@include bp(bp4) {
+			content: "$bp4: #{$bp4}";
+			background: green;
+		}
+		
+		@include bp(bp5) {
+			content: "$bp5: #{$bp5}";
+			background: blue;
+		}
+		
+		@include bp(bp6) {
+			content: "$bp6: #{$bp6}";
+			background: purple;
+		}
+
+		@include bp(bp7) {
+			content: "$bp7: #{$bp7}";
+			background: orange;
+		}
+	}
+}

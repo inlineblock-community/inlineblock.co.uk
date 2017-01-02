@@ -1,0 +1,17 @@
+/*------------------------------------*\
+	Typography
+\*------------------------------------*/
+
+$primary-font:		-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$secondary-font:    $primary-font;
+$alt-font:          Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+$heading-font:      $primary-font;
+
+$base-font-size:    20px;
+$base-line-height:  30px;
+
+$h1-size:           36px;
+$h2-size:           30px;
+$h3-size:           24px;
+$h4-size:           20px;
+$h5-size:           16px;

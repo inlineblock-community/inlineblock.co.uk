@@ -1,0 +1,32 @@
+/*------------------------------------*\
+	Lists
+\*------------------------------------*/
+
+/**
+ * Ordered list
+ */
+ol {
+	padding-left: $spacing;
+}
+
+
+/**
+ * Unordered list
+ */
+ul {
+	padding-left: $spacing;
+}
+
+
+
+/**
+ * Definition list
+ */
+dt {
+	margin-top: $spacing;
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+}

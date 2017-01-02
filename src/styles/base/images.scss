@@ -1,0 +1,15 @@
+/*------------------------------------*\
+	Images
+	inc. Google maps fix (https://github.com/inuitcss/spacing.images/blob/master/_spacing.images.scss)
+\*------------------------------------*/
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.gm-style img,
+img[width],
+img[height] {
+	max-width: none;
+}

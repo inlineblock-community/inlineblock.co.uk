@@ -2,28 +2,42 @@
 	Buttons
 \*------------------------------------*/
 
+.btn-block {
+	text-align: center;
+	margin: 40px 0;
+}
+
 .btn {
-	display: inline-block;
+	display: block;
 	box-sizing: border-box;
 	height: 45px;
 	padding: 0 50px;
 	border: 0px solid #fff;
 	border-radius: 8px;
-	color: #555;
-	background-color: #fff;
+	color: #fff;
+	background-color: #ff3f4c;
 	font-weight: 400;
 	line-height: 45px;
 	text-align: center;
 	white-space: nowrap;
 	text-decoration: none;
-	// letter-spacing: 0.1rem;
-	// text-transform: uppercase;
+	margin: 5px;
 	cursor: pointer;
+	font-weight: bold;
+	box-shadow: 0px 4px 4px 0px rgba(10,10,10,0.05);
+	transition: all 0.2s ease;
 
 	&:hover, &:focus {
 		border-color: #888;
 		outline: 0;
-		color: #333;
+		color: #fff;
 		text-decoration: none;
+		position: relative;
+		top: -1px;
+		box-shadow: 0px 8px 4px 0px rgba(10,10,10,0.1);
+	}
+
+	@include bp(bp2) {
+		display: inline-block;
 	}
 }

@@ -1,63 +1,4 @@
 /*------------------------------------*\
-	Settings
-	Global variables, config
-\*------------------------------------*/
-/*------------------------------------*\
-	Global
-\*------------------------------------*/
-/*------------------------------------*\
-	Colours
-\*------------------------------------*/
-/*------------------------------------*\
-	Typography
-\*------------------------------------*/
-/*------------------------------------*\
-	Responsive
-\*------------------------------------*/
-/*------------------------------------*\
-	Tools
-	Mixins and functions
-\*------------------------------------*/
-/*------------------------------------*\
-	Mixins
-\*------------------------------------*/
-/**
- * Convert pixels to REMs with fallback for older browsers
- * Example usage:
- * @include font-size(14px)
- */
-/**
- * Add a breakpoint
- * Example usage:
- * @include breakpoint(bp2) { // css }
- */
-/**
- * Create a breakpoint for below a given size 
- * Example usage:
- * @include below(200px) { // css }
- */
-/**
- * Create a breakpoint for above a given size 
- * Example usage:
- * @include above(200px) { // css }
- */
-/*------------------------------------*\
-	Placeholders
-\*------------------------------------*/
-/**
- * Clearfix
- * Example usage:
- * .wrap {
- * 		...
- * 		@extend %clearfix;
- * }
- */
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/*------------------------------------*\
 	Generic
 	Ground-zero styles
 \*------------------------------------*/
@@ -433,10 +374,6 @@ html {
           box-sizing: inherit; }
 
 /*------------------------------------*\
-	Base
-	Unclassed HTML elements
-\*------------------------------------*/
-/*------------------------------------*\
 	Figure
 \*------------------------------------*/
 figure {
@@ -447,241 +384,6 @@ figcaption {
 
 figcaption p {
   font-size: 80%; }
-
-/*------------------------------------*\
-	Forms
-\*------------------------------------*/
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none; }
-
-textarea {
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px; }
-
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-  border: 1px solid #4abf94;
-  outline: 0; }
-
-label {
-  display: block;
-  margin: .5em 0;
-  font-weight: 600; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline; }
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: block;
-  padding: 0.5em 1em;
-  margin: .5em 0;
-  border-color: #4abf94;
-  background: #4abf94;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-weight: 600;
-  border-radius: 8px;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border: 2px solid #4abf94; }
-
-input[type="submit"].center,
-input[type="reset"].center,
-input[type="button"].center {
-  margin: 0 auto; }
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  background: #389e79;
-  border: 2px solid #389e79;
-  text-decoration: none;
-  color: #fff; }
-
-.required {
-  color: #BF5D58; }
-
-/*------------------------------------*\
-	12 col grid sytem
-\*------------------------------------*/
-/**
- * Clearfix
- */
-/**
- * Grid
- */
-.col {
-  float: left; }
-
-.col-right {
-  float: right; }
-
-.col-1 {
-  width: 8.33333%; }
-
-.col-2 {
-  width: 16.66667%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-4 {
-  width: 33.33333%; }
-
-.col-5 {
-  width: 41.66667%; }
-
-.col-6, .col-half {
-  width: 50%; }
-
-.col-7 {
-  width: 58.33333%; }
-
-.col-8 {
-  width: 66.66667%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.33333%; }
-
-.col-11 {
-  width: 91.66667%; }
-
-.col-12, .col-full {
-  width: 100%; }
-
-@media (min-width: 30em) {
-  .sm-col {
-    float: left; }
-  .sm-col-right {
-    float: right; }
-  .sm-col-1 {
-    width: 8.33333%; }
-  .sm-col-2 {
-    width: 16.66667%; }
-  .sm-col-3 {
-    width: 25%; }
-  .sm-col-4 {
-    width: 33.33333%; }
-  .sm-col-5 {
-    width: 41.66667%; }
-  .sm-col-6, .sm-col-half {
-    width: 50%; }
-  .sm-col-7 {
-    width: 58.33333%; }
-  .sm-col-8 {
-    width: 66.66667%; }
-  .sm-col-9 {
-    width: 75%; }
-  .sm-col-10 {
-    width: 83.33333%; }
-  .sm-col-11 {
-    width: 91.66667%; }
-  .sm-col-12, .sm-col-full {
-    width: 100%; } }
-
-@media (min-width: 37.5em) {
-  .md-col {
-    float: left; }
-  .md-col-right {
-    float: right; }
-  .md-col-1 {
-    width: 8.33333%; }
-  .md-col-2 {
-    width: 16.66667%; }
-  .md-col-3 {
-    width: 25%; }
-  .md-col-4 {
-    width: 33.33333%; }
-  .md-col-5 {
-    width: 41.66667%; }
-  .md-col-6, .md-col-half {
-    width: 50%; }
-  .md-col-7 {
-    width: 58.33333%; }
-  .md-col-8 {
-    width: 66.66667%; }
-  .md-col-9 {
-    width: 75%; }
-  .md-col-10 {
-    width: 83.33333%; }
-  .md-col-11 {
-    width: 91.66667%; }
-  .md-col-12, .md-col-full {
-    width: 100%; } }
-
-@media (min-width: 48em) {
-  .lg-col {
-    float: left; }
-  .lg-col-right {
-    float: right; }
-  .lg-col-1 {
-    width: 8.33333%; }
-  .lg-col-2 {
-    width: 16.66667%; }
-  .lg-col-3 {
-    width: 25%; }
-  .lg-col-4 {
-    width: 33.33333%; }
-  .lg-col-5 {
-    width: 41.66667%; }
-  .lg-col-6, .lg-col-half {
-    width: 50%; }
-  .lg-col-7 {
-    width: 58.33333%; }
-  .lg-col-8 {
-    width: 66.66667%; }
-  .lg-col-9 {
-    width: 75%; }
-  .lg-col-10 {
-    width: 83.33333%; }
-  .lg-col-11 {
-    width: 91.66667%; }
-  .lg-col-12, .lg-col-full {
-    width: 100%; } }
 
 /*------------------------------------*\
 	Headings
@@ -807,35 +509,6 @@ blockquote footer {
   font-size: 0.77778rem; }
 
 /*------------------------------------*\
-	Tables
-\*------------------------------------*/
-table {
-  margin-bottom: 1em; }
-
-table th,
-table td {
-  padding: 0.5em 1em;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-  -webkit-font-smoothing: antialiased; }
-
-table th {
-  border-width: 2px; }
-
-table tr:last-child td {
-  border-bottom: none; }
-
-table tr:nth-child(even) {
-  background: #eee; }
-
-table tbody tr:hover {
-  background: #f9f9f9; }
-
-/*------------------------------------*\
-	Objects
-	Cosmetic-free design patterns
-\*------------------------------------*/
-/*------------------------------------*\
 	Wrappers
 \*------------------------------------*/
 .wrapper {
@@ -843,15 +516,6 @@ table tbody tr:hover {
   margin: 3em auto;
   padding: 0 1em; }
 
-/*------------------------------------*\
-	Vendor
-	Third-party styles
-\*------------------------------------*/
-/*@import "vendor/plugin";*/
-/*------------------------------------*\
-	Components
-	Designed components, chunks of UI
-\*------------------------------------*/
 /*------------------------------------*\
 	Header
 \*------------------------------------*/
@@ -925,17 +589,10 @@ table tbody tr:hover {
       display: inline-block; } }
 
 /*------------------------------------*\
-	Trumps
-	Helpers and overrides
-\*------------------------------------*/
-/*------------------------------------*\
 	Media
 	Print styles
 \*------------------------------------*/
 @media print {
-  /*------------------------------------*\
-	Print
-\*------------------------------------*/
   * {
     background: #ffffff;
     color: #000000 !important; }
@@ -954,5 +611,3 @@ table tbody tr:hover {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important; } }
-
-/*# sourceMappingURL=maps/styles.css.map */

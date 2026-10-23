@@ -16,107 +16,142 @@
 
 	<h2>Book Club</h2>
 	<p>Each month, we pick a book to read and discuss.</p>
+
+	<dl class="book-stats" hidden>
+		<div><dt>Books read</dt><dd data-stat="books"></dd></div>
+		<div><dt>Pages read</dt><dd data-stat="pages"></dd></div>
+		<div><dt>Average pages</dt><dd data-stat="average"></dd></div>
+		<div><dt>Longest</dt><dd data-stat="longest"></dd></div>
+	</dl>
+
 	<h3>Currently reading:</h3>
 	<ol class="book-list">
-		<li><a href="https://www.goodreads.com/book/show/254305670-the-damn-rules">The Damn Rules: How Vulnerability, Inefficiency, and Love Liberate Leaders from the Trustbroken Economy</a> <span class="author">by Nick Richtsmeier (November, 2026)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/30659.Meditations">Meditations</a> <span class="author">by Marcus Aurelius (Ongoing)</span></li>
+		<li data-pages="206"><a href="https://www.goodreads.com/book/show/254305670-the-damn-rules">The Damn Rules: How Vulnerability, Inefficiency, and Love Liberate Leaders from the Trustbroken Economy</a> <span class="author">by Nick Richtsmeier (November, 2026)</span></li>
+		<li data-pages="203"><a href="https://www.goodreads.com/book/show/30659.Meditations">Meditations</a> <span class="author">by Marcus Aurelius (Ongoing)</span></li>
 	</ol>
 
 	<h3>Previously read:</h3>
-	<ol class="book-list">
-		<li><a href="https://www.goodreads.com/book/show/18770267">Make It Stick: The Science of Successful Learning</a> <span class="author">by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel (October, 2026)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/29342515.The_Coaching_Habit">The Coaching Habit: Say Less, Ask More &amp; Change the Way You Lead Forever</a> <span class="author">by Michael Bungay Stanier (September, 2026)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/215514806-the-next-conversation">The Next Conversation: Argue Less, Talk More</a> <span class="author">by Jefferson Fisher (August, 2026)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/56450.Trickster_Makes_This_World">Trickster Makes This World: Mischief, Myth, and Art</a> <span class="author">by Lewis Hyde (July, 2026)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/71730">Nonviolent Communication: A Language of Life</a> <span class="author">by Marshall B. Rosenberg (May, 2026)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/189989">Finite and Infinite Games: A Vision of Life as Play and Possibility</a> <span class="author">by James P. Carse (April, 2026)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/11334.Song_of_Solomon">Song of Solomon</a> <span class="author">by Toni Morrison (November, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/40063024-dreyer-s-english">Dreyer's English: An Utterly Correct Guide to Clarity and Style</a> <span class="author">by Benjamin Dreyer (October, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/12507526">Becoming a Technical Leader</a> <span class="author">by Gerald M. Weinberg (September, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/65213543">Bookshops &amp; Bonedust</a> <span class="author">by Travis Baldree (July, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things">The Design of Everyday Things</a> <span class="author">by Donald A. Norman (June, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/43945.Portnoy_s_Complaint">Portnoy's Complaint</a> <span class="author">by Philip Roth (May, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/39838318">Dirty Genes: A Breakthrough Program to Treat the Root Cause of Illness and Optimize Your Health</a> <span class="author">by Dr Ben Lynch (April, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/75582857-unprocessed">Unprocessed: How the Food We Eat Is Fuelling Our Mental Health Crisis</a> <span class="author">by Kimberley Wilson (March, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/52706058-the-honjin-murders">The Honjin Murders</a> <span class="author">by Seishi Yokomizo (February, 2025)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/200468411.Babylonia">Babylonia</a> <span class="author">by Costanza Casati (December, 2024)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/394535.Blood_Meridian__or__the_Evening_Redness_in_the_West">Blood Meridian</a> <span class="author">by Cormac McCarthy (September, 2024)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/22571572-letters-from-a-stoic">Letters from a Stoic</a> <span class="author">by Seneca (May, 2024)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/25490360-the-burnout-society">The Burnout Society</a> <span class="author">by Byung-Chul Han (April, 2024)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/60165381-this-is-what-it-sounds-like">This Is What It Sounds Like: What the Music You Love Says About You</a> <span class="author">by Susan Rogers, Ogi Ogas (March, 2024)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/254799.The_Creative_Habit">The Creative Habit: Learn It and Use It for Life</a> <span class="author">by Twyla Tharp (February, 2024)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/102030.Musashi">Musashi</a> <span class="author">by Eiji Yoshikawa (December, 2023)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/22034.The_Godfather">The Godfather</a> <span class="author">by Mario Puzo (November, 2023)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/25179.Blankets">Blankets</a> <span class="author">by Craig Thompson (October, 2023)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/53255264-why-women-are-blamed-for-everything">Why Women Are Blamed For Everything</a> <span class="author">by Dr Jessica Taylor (September, 2023)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/54716655-kill-it-with-fire">Kill It with Fire: Manage Aging Computer Systems</a> <span class="author">by Marianne Bellotti (August, 2023)</span></li>
-		<li><a href="https://www.goodreads.com/en/book/show/54814676">Crying in H Mart</a> <span class="author">by Michelle Zauner (July, 2023)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/40745.Mindset">Mindset: The New Psychology of Success</a> <span class="author">by Carol S. Dweck (June, 2023)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/16902.Walden">Walden</a> <span class="author">by Henry David Thoreau (May, 2023)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/208926.With_Winning_in_Mind">With Winning in Mind</a> <span class="author">by Lanny Bassham (April, 2023)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/13079982-fahrenheit-451">Fahrenheit 451</a> <span class="author">by Ray Bradbury (March, 2023)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/41881472-the-psychology-of-money">The Psychology of Money</a> <span class="author">by Morgan Housel (February, 2023)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/2845024-anathem">Anathem</a> <span class="author">by Neal Stephenson (November, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/8518218-the-lost-art-of-reading">The Lost Art of Reading</a> <span class="author">by David L. Ulin (October, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/55145261-the-anthropocene-reviewed">The Anthropocene Reviewed</a> <span class="author">by John Green (August, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/52668915-entangled-life">Entangled Life</a> <span class="author">by Merlin Sheldrake (August, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/32968546-perennial-seller">Perennial Seller</a> <span class="author">by Ryan Holiday (July, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/24611735-black-box-thinking">Black Box Thinking</a> <span class="author">by Matthew Syed (June, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/8701960-the-information">The Information: A History, a Theory, a Flood</a> <span class="author">by James Gleick (April, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/659361.Listening_Book">Listening Book</a> <span class="author">by William Allaudin Mathieu (March, 2022)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/54785515-four-thousand-weeks">Four Thousand Weeks: Time Management for Mortals</a> <span class="author">by Oliver Burkeman (February, 2022)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/44767458-dune">Dune</a> <span class="author">by Frank Herbert (December, 2021)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/16158522-eleven-rings">Eleven Rings: The Soul of Success</a> <span class="author">by Phil Jackson (September, 2021)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/90557.Buddhism_without_Beliefs">Buddhism without Beliefs</a> <span class="author">by Stephen Batchelor (August, 2021)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/31799.The_Problems_of_Philosophy">The Problems of Philosophy</a> <span class="author">by Bertrand Russell (July, 2021)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/17465709-braiding-sweetgrass">Braiding Sweetgrass</a> <span class="author">by Robin Wall Kimmerer (June, 2021)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/48019.The_Effective_Executive">The Effective Executive</a> <span class="author">by Peter F. Drucker (May, 2021)</span></li>
-        <li><a href="https://www.goodreads.com/book/show/18194765-draft-no-4">Draft No. 4: On the Writing Process</a> <span class="author">by John McPhee (April, 2021)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/44245196-the-great-mental-models">The Great Mental Models: General Thinking Concepts</a> <span class="author">by Shane Parrish, Rhiannon Beaubien (March, 2021)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/52879286-humankind">Humankind: A Hopeful History</a> <span class="author">by Rutger Bregman (February, 2021)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/11275.The_Wind_Up_Bird_Chronicle">The Wind-Up Bird Chronicle</a> <span class="author">by Haruki Murakami (December, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/23995433-andy-warhol-was-a-hoarder">Andy Warhol was a Hoarder: Inside the Minds of History's Great Personalities</a> <span class="author">by Claudia Kalb (November, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/1221559.Letters_from_a_Self_Made_Merchant_to_His_Son">Letters from a Self-Made Merchant to His Son</a> <span class="author">by G. H. Lorimer (October, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/434903.The_Rings_of_Saturn">The Rings of Saturn</a> <span class="author">by W.G. Sebald (September, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/40265832">How to Be an Antiracist</a> <span class="author">by Ibram X. Kendi (August, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/36013961-stoicism-and-the-art-of-happiness">Stoicism and the Art of Happiness: Practical wisdom for everyday life</a> <span class="author">by Donald J. Robertson (July, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/18774981-waking-up">Waking Up: A Guide to Spirituality Without Religion</a> <span class="author">by Sam Harris (June, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/17851885-i-am-malala">I Am Malala: The Story of the Girl Who Stood Up for Education and Was Shot by the Taliban</a> <span class="author">by by Malala Yousafzai (May, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/19219224-brunel">Brunel: The Man Who Built the World</a> <span class="author">by Steven Brindle (April, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes">How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking</a> <span class="author">by Sönke Ahrens (March, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/26917955-turn-the-ship-around">Turn The Ship Around!: A True Story of Building Leaders by Breaking the Rules</a> <span class="author">by L. David Marquet (March, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/31138556-homo-deus">Homo Deus: A History of Tomorrow</a> <span class="author">by Yuval Noah Harari (February, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/23692271-sapiens">Sapiens: A Brief History of Humankind</a> <span class="author">by Yuval Noah Harari (January, 2020)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/45755953-stillness-is-the-key">Stillness is the Key: An Ancient Strategy for Modern Life</a> <span class="author">by Ryan Holiday (November, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/40112557-make-time">Make Time: How to focus on what matters every day</a> <span class="author">by Jake Knapp, John Zeratsky (October, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/37906748-bullshit-jobs">Bullshit Jobs: A Theory</a> <span class="author">by David Graeber (September, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/19306508-man-s-search-for-meaning">Man's Search for Meaning</a> <span class="author">by Viktor E. Frankl (August, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/37826561-educated">Educated</a> <span class="author">by Tara Westover (July, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/873993.The_Trusted_Advisor">The Trusted Advisor</a> <span class="author">by David H. Maister, Charles H. Green, Robert M. Galford (June, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/174713.The_Lessons_of_History">The Lessons of History</a> <span class="author">by Will Durant, Ariel Durant (May, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/18079531-fail-fast-fail-often">Fail Fast, Fail Often: How Losing Can Help You Win</a> <span class="author">by Ryan Babineaux, John Krumboltz (April, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/81940.Mastery">Mastery: The Keys to Success and Long-Term Fulfillment</a> <span class="author">by George Leonard (March, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/1999475.A_Million_Miles_in_a_Thousand_Years">A Million Miles in a Thousand Years: What I Learned While Editing My Life</a> <span class="author">by Donald Miller (February, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/35522033-i-hear-you">I Hear You: The Surprisingly Simple Skill Behind Extraordinary Relationships</a> <span class="author">by Michael S. Sorensen (January, 2019)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/41019110-it-doesn-t-have-to-be-crazy-at-work">It Doesn’t Have to Be Crazy at Work</a> <span class="author">by Jason Fried and David Heinemeier Hansson (December, 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/40121378-atomic-habits">Atomic Habits: An Easy and Proven Way to Build Good Habits and Break Bad Ones</a> <span class="author">by James Clear (November, 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/13588356-daring-greatly">Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead</a> <span class="author">by Brené Brown (October, 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/37797266-notes-on-a-nervous-planet">Notes on a Nervous Planet</a> <span class="author">by Matt Haig (September, 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/35412097-when">When: The Scientific Secrets of Perfect Timing</a> <span class="author">by Daniel H. Pink (August, 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/26156469-never-split-the-difference">Never Split the Difference: Negotiating As If Your Life Depended On It</a> <span class="author">by Chris Voss (July 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/34460583-building-a-storybrand">Building a StoryBrand: Clarify Your Message So Customers Will Listen</a> <span class="author">by Donald Miller (June 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/35604684-willpower-doesn-t-work">Willpower Doesn't Work: Discover the Hidden Keys to Success</a> <span class="author">by Benjamin Hardy (May 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/28370086-how-to-have-a-good-day">How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life</a> <span class="author">by Caroline Webb (April 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/18668059-the-obstacle-is-the-way">The Obstacle is the Way</a> <span class="author">by Ryan Holiday (March 2018)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/30142270-happy">Happy: Why More or Less Everything is Absolutely Fine</a> <span class="author">by Derren Brown (October 2017)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/6918930-confessions-of-a-public-speaker">Confessions of a Public Speaker</a> <span class="author">by Scott Berkun (September 2017)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/25814544-sprint">Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days</a> <span class="author">by Jake Knapp (August 2017)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/27220736-shoe-dog">Shoe Dog</a> <span class="author">by Phil Knight (July 2017)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/29965800-the-subtle-art-of-not-giving-a-f-ck">The Subtle Art of Not Giving a F*ck</a> <span class="author">by Mark Manson (June 2017)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/18077903-creativity-inc">Creativity, Inc.</a> <span class="author">by Ed Catmull (May 2017)</span></li>
-		<li><a href="https://www.goodreads.com/book/show/13062120-thinking-fast-and-slow">Thinking, Fast and Slow</a> <span class="author">by Daniel Kahneman (April 2017)</span></li>
+	<ol class="book-list" id="previously-read">
+		<li data-pages="336"><a href="https://www.goodreads.com/book/show/18770267">Make It Stick: The Science of Successful Learning</a> <span class="author">by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel (October, 2026)</span></li>
+		<li data-pages="227"><a href="https://www.goodreads.com/book/show/29342515.The_Coaching_Habit">The Coaching Habit: Say Less, Ask More &amp; Change the Way You Lead Forever</a> <span class="author">by Michael Bungay Stanier (September, 2026)</span></li>
+		<li data-pages="304"><a href="https://www.goodreads.com/book/show/215514806-the-next-conversation">The Next Conversation: Argue Less, Talk More</a> <span class="author">by Jefferson Fisher (August, 2026)</span></li>
+		<li data-pages="425"><a href="https://www.goodreads.com/book/show/56450.Trickster_Makes_This_World">Trickster Makes This World: Mischief, Myth, and Art</a> <span class="author">by Lewis Hyde (July, 2026)</span></li>
+		<li data-pages="227"><a href="https://www.goodreads.com/book/show/71730">Nonviolent Communication: A Language of Life</a> <span class="author">by Marshall B. Rosenberg (May, 2026)</span></li>
+		<li data-pages="152"><a href="https://www.goodreads.com/book/show/189989">Finite and Infinite Games: A Vision of Life as Play and Possibility</a> <span class="author">by James P. Carse (April, 2026)</span></li>
+		<li data-pages="341"><a href="https://www.goodreads.com/book/show/11334.Song_of_Solomon">Song of Solomon</a> <span class="author">by Toni Morrison (November, 2025)</span></li>
+		<li data-pages="312"><a href="https://www.goodreads.com/book/show/40063024-dreyer-s-english">Dreyer's English: An Utterly Correct Guide to Clarity and Style</a> <span class="author">by Benjamin Dreyer (October, 2025)</span></li>
+		<li data-pages="284"><a href="https://www.goodreads.com/book/show/12507526">Becoming a Technical Leader</a> <span class="author">by Gerald M. Weinberg (September, 2025)</span></li>
+		<li data-pages="354"><a href="https://www.goodreads.com/book/show/65213543">Bookshops &amp; Bonedust</a> <span class="author">by Travis Baldree (July, 2025)</span></li>
+		<li data-pages="368"><a href="https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things">The Design of Everyday Things</a> <span class="author">by Donald A. Norman (June, 2025)</span></li>
+		<li data-pages="288"><a href="https://www.goodreads.com/book/show/43945.Portnoy_s_Complaint">Portnoy's Complaint</a> <span class="author">by Philip Roth (May, 2025)</span></li>
+		<li data-pages="193"><a href="https://www.goodreads.com/book/show/39838318">Dirty Genes: A Breakthrough Program to Treat the Root Cause of Illness and Optimize Your Health</a> <span class="author">by Dr Ben Lynch (April, 2025)</span></li>
+		<li data-pages="282"><a href="https://www.goodreads.com/book/show/75582857-unprocessed">Unprocessed: How the Food We Eat Is Fuelling Our Mental Health Crisis</a> <span class="author">by Kimberley Wilson (March, 2025)</span></li>
+		<li data-pages="206"><a href="https://www.goodreads.com/book/show/52706058-the-honjin-murders">The Honjin Murders</a> <span class="author">by Seishi Yokomizo (February, 2025)</span></li>
+		<li data-pages="424"><a href="https://www.goodreads.com/book/show/200468411.Babylonia">Babylonia</a> <span class="author">by Costanza Casati (December, 2024)</span></li>
+		<li data-pages="354"><a href="https://www.goodreads.com/book/show/394535.Blood_Meridian__or__the_Evening_Redness_in_the_West">Blood Meridian</a> <span class="author">by Cormac McCarthy (September, 2024)</span></li>
+		<li data-pages="254"><a href="https://www.goodreads.com/book/show/22571572-letters-from-a-stoic">Letters from a Stoic</a> <span class="author">by Seneca (May, 2024)</span></li>
+		<li data-pages="72"><a href="https://www.goodreads.com/book/show/25490360-the-burnout-society">The Burnout Society</a> <span class="author">by Byung-Chul Han (April, 2024)</span></li>
+		<li data-pages="288"><a href="https://www.goodreads.com/book/show/60165381-this-is-what-it-sounds-like">This Is What It Sounds Like: What the Music You Love Says About You</a> <span class="author">by Susan Rogers, Ogi Ogas (March, 2024)</span></li>
+		<li data-pages="256"><a href="https://www.goodreads.com/book/show/254799.The_Creative_Habit">The Creative Habit: Learn It and Use It for Life</a> <span class="author">by Twyla Tharp (February, 2024)</span></li>
+		<li data-pages="977"><a href="https://www.goodreads.com/book/show/102030.Musashi">Musashi</a> <span class="author">by Eiji Yoshikawa (December, 2023)</span></li>
+		<li data-pages="450"><a href="https://www.goodreads.com/book/show/22034.The_Godfather">The Godfather</a> <span class="author">by Mario Puzo (November, 2023)</span></li>
+		<li data-pages="587"><a href="https://www.goodreads.com/book/show/25179.Blankets">Blankets</a> <span class="author">by Craig Thompson (October, 2023)</span></li>
+		<li data-pages="325"><a href="https://www.goodreads.com/book/show/53255264-why-women-are-blamed-for-everything">Why Women Are Blamed For Everything</a> <span class="author">by Dr Jessica Taylor (September, 2023)</span></li>
+		<li data-pages="248"><a href="https://www.goodreads.com/book/show/54716655-kill-it-with-fire">Kill It with Fire: Manage Aging Computer Systems</a> <span class="author">by Marianne Bellotti (August, 2023)</span></li>
+		<li data-pages="256"><a href="https://www.goodreads.com/en/book/show/54814676">Crying in H Mart</a> <span class="author">by Michelle Zauner (July, 2023)</span></li>
+        <li data-pages="288"><a href="https://www.goodreads.com/book/show/40745.Mindset">Mindset: The New Psychology of Success</a> <span class="author">by Carol S. Dweck (June, 2023)</span></li>
+        <li data-pages="270"><a href="https://www.goodreads.com/book/show/16902.Walden">Walden</a> <span class="author">by Henry David Thoreau (May, 2023)</span></li>
+        <li data-pages="152"><a href="https://www.goodreads.com/book/show/208926.With_Winning_in_Mind">With Winning in Mind</a> <span class="author">by Lanny Bassham (April, 2023)</span></li>
+        <li data-pages="190"><a href="https://www.goodreads.com/book/show/13079982-fahrenheit-451">Fahrenheit 451</a> <span class="author">by Ray Bradbury (March, 2023)</span></li>
+        <li data-pages="288"><a href="https://www.goodreads.com/book/show/41881472-the-psychology-of-money">The Psychology of Money</a> <span class="author">by Morgan Housel (February, 2023)</span></li>
+        <li data-pages="937"><a href="https://www.goodreads.com/book/show/2845024-anathem">Anathem</a> <span class="author">by Neal Stephenson (November, 2022)</span></li>
+        <li data-pages="151"><a href="https://www.goodreads.com/book/show/8518218-the-lost-art-of-reading">The Lost Art of Reading</a> <span class="author">by David L. Ulin (October, 2022)</span></li>
+        <li data-pages="320"><a href="https://www.goodreads.com/book/show/55145261-the-anthropocene-reviewed">The Anthropocene Reviewed</a> <span class="author">by John Green (August, 2022)</span></li>
+        <li data-pages="368"><a href="https://www.goodreads.com/book/show/52668915-entangled-life">Entangled Life</a> <span class="author">by Merlin Sheldrake (August, 2022)</span></li>
+        <li data-pages="238"><a href="https://www.goodreads.com/book/show/32968546-perennial-seller">Perennial Seller</a> <span class="author">by Ryan Holiday (July, 2022)</span></li>
+        <li data-pages="322"><a href="https://www.goodreads.com/book/show/24611735-black-box-thinking">Black Box Thinking</a> <span class="author">by Matthew Syed (June, 2022)</span></li>
+        <li data-pages="526"><a href="https://www.goodreads.com/book/show/8701960-the-information">The Information: A History, a Theory, a Flood</a> <span class="author">by James Gleick (April, 2022)</span></li>
+        <li data-pages="179"><a href="https://www.goodreads.com/book/show/659361.Listening_Book">Listening Book</a> <span class="author">by William Allaudin Mathieu (March, 2022)</span></li>
+		<li data-pages="280"><a href="https://www.goodreads.com/book/show/54785515-four-thousand-weeks">Four Thousand Weeks: Time Management for Mortals</a> <span class="author">by Oliver Burkeman (February, 2022)</span></li>
+        <li data-pages="608"><a href="https://www.goodreads.com/book/show/44767458-dune">Dune</a> <span class="author">by Frank Herbert (December, 2021)</span></li>
+        <li data-pages="356"><a href="https://www.goodreads.com/book/show/16158522-eleven-rings">Eleven Rings: The Soul of Success</a> <span class="author">by Phil Jackson (September, 2021)</span></li>
+        <li data-pages="136"><a href="https://www.goodreads.com/book/show/90557.Buddhism_without_Beliefs">Buddhism without Beliefs</a> <span class="author">by Stephen Batchelor (August, 2021)</span></li>
+        <li data-pages="114"><a href="https://www.goodreads.com/book/show/31799.The_Problems_of_Philosophy">The Problems of Philosophy</a> <span class="author">by Bertrand Russell (July, 2021)</span></li>
+        <li data-pages="409"><a href="https://www.goodreads.com/book/show/17465709-braiding-sweetgrass">Braiding Sweetgrass</a> <span class="author">by Robin Wall Kimmerer (June, 2021)</span></li>
+        <li data-pages="166"><a href="https://www.goodreads.com/book/show/48019.The_Effective_Executive">The Effective Executive</a> <span class="author">by Peter F. Drucker (May, 2021)</span></li>
+        <li data-pages="208"><a href="https://www.goodreads.com/book/show/18194765-draft-no-4">Draft No. 4: On the Writing Process</a> <span class="author">by John McPhee (April, 2021)</span></li>
+		<li data-pages="190"><a href="https://www.goodreads.com/book/show/44245196-the-great-mental-models">The Great Mental Models: General Thinking Concepts</a> <span class="author">by Shane Parrish, Rhiannon Beaubien (March, 2021)</span></li>
+		<li data-pages="480"><a href="https://www.goodreads.com/book/show/52879286-humankind">Humankind: A Hopeful History</a> <span class="author">by Rutger Bregman (February, 2021)</span></li>
+		<li data-pages="607"><a href="https://www.goodreads.com/book/show/11275.The_Wind_Up_Bird_Chronicle">The Wind-Up Bird Chronicle</a> <span class="author">by Haruki Murakami (December, 2020)</span></li>
+		<li data-pages="320"><a href="https://www.goodreads.com/book/show/23995433-andy-warhol-was-a-hoarder">Andy Warhol was a Hoarder: Inside the Minds of History's Great Personalities</a> <span class="author">by Claudia Kalb (November, 2020)</span></li>
+		<li data-pages="364"><a href="https://www.goodreads.com/book/show/1221559.Letters_from_a_Self_Made_Merchant_to_His_Son">Letters from a Self-Made Merchant to His Son</a> <span class="author">by G. H. Lorimer (October, 2020)</span></li>
+		<li data-pages="296"><a href="https://www.goodreads.com/book/show/434903.The_Rings_of_Saturn">The Rings of Saturn</a> <span class="author">by W.G. Sebald (September, 2020)</span></li>
+		<li data-pages="320"><a href="https://www.goodreads.com/book/show/40265832">How to Be an Antiracist</a> <span class="author">by Ibram X. Kendi (August, 2020)</span></li>
+		<li data-pages="256"><a href="https://www.goodreads.com/book/show/36013961-stoicism-and-the-art-of-happiness">Stoicism and the Art of Happiness: Practical wisdom for everyday life</a> <span class="author">by Donald J. Robertson (July, 2020)</span></li>
+		<li data-pages="256"><a href="https://www.goodreads.com/book/show/18774981-waking-up">Waking Up: A Guide to Spirituality Without Religion</a> <span class="author">by Sam Harris (June, 2020)</span></li>
+		<li data-pages="336"><a href="https://www.goodreads.com/book/show/17851885-i-am-malala">I Am Malala: The Story of the Girl Who Stood Up for Education and Was Shot by the Taliban</a> <span class="author">by by Malala Yousafzai (May, 2020)</span></li>
+		<li data-pages="288"><a href="https://www.goodreads.com/book/show/19219224-brunel">Brunel: The Man Who Built the World</a> <span class="author">by Steven Brindle (April, 2020)</span></li>
+		<li data-pages="188"><a href="https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes">How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking</a> <span class="author">by Sönke Ahrens (March, 2020)</span></li>
+		<li data-pages="236"><a href="https://www.goodreads.com/book/show/26917955-turn-the-ship-around">Turn The Ship Around!: A True Story of Building Leaders by Breaking the Rules</a> <span class="author">by L. David Marquet (March, 2020)</span></li>
+		<li data-pages="496"><a href="https://www.goodreads.com/book/show/31138556-homo-deus">Homo Deus: A History of Tomorrow</a> <span class="author">by Yuval Noah Harari (February, 2020)</span></li>
+		<li data-pages="456"><a href="https://www.goodreads.com/book/show/23692271-sapiens">Sapiens: A Brief History of Humankind</a> <span class="author">by Yuval Noah Harari (January, 2020)</span></li>
+		<li data-pages="264"><a href="https://www.goodreads.com/book/show/45755953-stillness-is-the-key">Stillness is the Key: An Ancient Strategy for Modern Life</a> <span class="author">by Ryan Holiday (November, 2019)</span></li>
+		<li data-pages="306"><a href="https://www.goodreads.com/book/show/40112557-make-time">Make Time: How to focus on what matters every day</a> <span class="author">by Jake Knapp, John Zeratsky (October, 2019)</span></li>
+		<li data-pages="392"><a href="https://www.goodreads.com/book/show/37906748-bullshit-jobs">Bullshit Jobs: A Theory</a> <span class="author">by David Graeber (September, 2019)</span></li>
+		<li data-pages="165"><a href="https://www.goodreads.com/book/show/19306508-man-s-search-for-meaning">Man's Search for Meaning</a> <span class="author">by Viktor E. Frankl (August, 2019)</span></li>
+		<li data-pages="384"><a href="https://www.goodreads.com/book/show/37826561-educated">Educated</a> <span class="author">by Tara Westover (July, 2019)</span></li>
+		<li data-pages="240"><a href="https://www.goodreads.com/book/show/873993.The_Trusted_Advisor">The Trusted Advisor</a> <span class="author">by David H. Maister, Charles H. Green, Robert M. Galford (June, 2019)</span></li>
+		<li data-pages="117"><a href="https://www.goodreads.com/book/show/174713.The_Lessons_of_History">The Lessons of History</a> <span class="author">by Will Durant, Ariel Durant (May, 2019)</span></li>
+		<li data-pages="193"><a href="https://www.goodreads.com/book/show/18079531-fail-fast-fail-often">Fail Fast, Fail Often: How Losing Can Help You Win</a> <span class="author">by Ryan Babineaux, John Krumboltz (April, 2019)</span></li>
+		<li data-pages="144"><a href="https://www.goodreads.com/book/show/81940.Mastery">Mastery: The Keys to Success and Long-Term Fulfillment</a> <span class="author">by George Leonard (March, 2019)</span></li>
+		<li data-pages="255"><a href="https://www.goodreads.com/book/show/1999475.A_Million_Miles_in_a_Thousand_Years">A Million Miles in a Thousand Years: What I Learned While Editing My Life</a> <span class="author">by Donald Miller (February, 2019)</span></li>
+		<li data-pages="148"><a href="https://www.goodreads.com/book/show/35522033-i-hear-you">I Hear You: The Surprisingly Simple Skill Behind Extraordinary Relationships</a> <span class="author">by Michael S. Sorensen (January, 2019)</span></li>
+		<li data-pages="240"><a href="https://www.goodreads.com/book/show/41019110-it-doesn-t-have-to-be-crazy-at-work">It Doesn’t Have to Be Crazy at Work</a> <span class="author">by Jason Fried and David Heinemeier Hansson (December, 2018)</span></li>
+		<li data-pages="322"><a href="https://www.goodreads.com/book/show/40121378-atomic-habits">Atomic Habits: An Easy and Proven Way to Build Good Habits and Break Bad Ones</a> <span class="author">by James Clear (November, 2018)</span></li>
+		<li data-pages="251"><a href="https://www.goodreads.com/book/show/13588356-daring-greatly">Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead</a> <span class="author">by Brené Brown (October, 2018)</span></li>
+		<li data-pages="320"><a href="https://www.goodreads.com/book/show/37797266-notes-on-a-nervous-planet">Notes on a Nervous Planet</a> <span class="author">by Matt Haig (September, 2018)</span></li>
+		<li data-pages="272"><a href="https://www.goodreads.com/book/show/35412097-when">When: The Scientific Secrets of Perfect Timing</a> <span class="author">by Daniel H. Pink (August, 2018)</span></li>
+		<li data-pages="288"><a href="https://www.goodreads.com/book/show/26156469-never-split-the-difference">Never Split the Difference: Negotiating As If Your Life Depended On It</a> <span class="author">by Chris Voss (July 2018)</span></li>
+		<li data-pages="240"><a href="https://www.goodreads.com/book/show/34460583-building-a-storybrand">Building a StoryBrand: Clarify Your Message So Customers Will Listen</a> <span class="author">by Donald Miller (June 2018)</span></li>
+		<li data-pages="256"><a href="https://www.goodreads.com/book/show/35604684-willpower-doesn-t-work">Willpower Doesn't Work: Discover the Hidden Keys to Success</a> <span class="author">by Benjamin Hardy (May 2018)</span></li>
+		<li data-pages="360"><a href="https://www.goodreads.com/book/show/28370086-how-to-have-a-good-day">How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life</a> <span class="author">by Caroline Webb (April 2018)</span></li>
+		<li data-pages="224"><a href="https://www.goodreads.com/book/show/18668059-the-obstacle-is-the-way">The Obstacle is the Way</a> <span class="author">by Ryan Holiday (March 2018)</span></li>
+		<li data-pages="512"><a href="https://www.goodreads.com/book/show/30142270-happy">Happy: Why More or Less Everything is Absolutely Fine</a> <span class="author">by Derren Brown (October 2017)</span></li>
+		<li data-pages="222"><a href="https://www.goodreads.com/book/show/6918930-confessions-of-a-public-speaker">Confessions of a Public Speaker</a> <span class="author">by Scott Berkun (September 2017)</span></li>
+		<li data-pages="288"><a href="https://www.goodreads.com/book/show/25814544-sprint">Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days</a> <span class="author">by Jake Knapp (August 2017)</span></li>
+		<li data-pages="386"><a href="https://www.goodreads.com/book/show/27220736-shoe-dog">Shoe Dog</a> <span class="author">by Phil Knight (July 2017)</span></li>
+		<li data-pages="224"><a href="https://www.goodreads.com/book/show/29965800-the-subtle-art-of-not-giving-a-f-ck">The Subtle Art of Not Giving a F*ck</a> <span class="author">by Mark Manson (June 2017)</span></li>
+		<li data-pages="368"><a href="https://www.goodreads.com/book/show/18077903-creativity-inc">Creativity, Inc.</a> <span class="author">by Ed Catmull (May 2017)</span></li>
+		<li data-pages="548"><a href="https://www.goodreads.com/book/show/13062120-thinking-fast-and-slow">Thinking, Fast and Slow</a> <span class="author">by Daniel Kahneman (April 2017)</span></li>
 	</ol>
 </div>
 
+<script>
+	(function () {
+		var books = document.querySelectorAll('#previously-read li');
+		var counted = document.querySelectorAll('#previously-read li[data-pages]');
+		var total = 0;
+		var longest = counted[0];
+
+		counted.forEach(function (li) {
+			var pages = Number(li.dataset.pages);
+			total += pages;
+			if (pages > Number(longest.dataset.pages)) longest = li;
+		});
+
+		var format = function (n) { return n.toLocaleString('en-GB'); };
+		var stats = document.querySelector('.book-stats');
+
+		stats.querySelector('[data-stat="books"]').textContent = format(books.length);
+		stats.querySelector('[data-stat="pages"]').textContent = format(total);
+		stats.querySelector('[data-stat="average"]').textContent = format(Math.round(total / counted.length));
+		var longestStat = stats.querySelector('[data-stat="longest"]');
+		var longestPages = document.createElement('small');
+		longestPages.textContent = format(Number(longest.dataset.pages)) + ' pages';
+		longestStat.textContent = longest.querySelector('a').textContent.split(':')[0];
+		longestStat.appendChild(longestPages);
+		stats.hidden = false;
+	})();
+</script>
 </body>
 </html>
